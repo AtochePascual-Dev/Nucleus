@@ -20,7 +20,6 @@ body {
     min-width: 32rem;
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
-    line-height: 1.8;
 }
 
 h1,
@@ -47,11 +46,141 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
+}
+
+figure {
+    margin: 0;
 }
 
 [class*="-container"] {
     width: min(95%, 120rem);
     margin: 0 auto;
+}
+
+/* * HEADER */
+.header {
+    padding: 5rem 0;
+    background-image: url("../img/header_bg.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30%;
+}
+
+@media (min-width:768px) {
+    .header {
+        background-size: 56%;
+    }
+}
+
+@media (min-width:992px) {
+    .header {
+        background-size: 47%;
+    }
+}
+
+.header__barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (min-width:768px) {
+    .header__barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.header__logo {
+    width: 15rem;
+}
+
+.header___grid {
+    margin-top: 5rem;
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+}
+
+@media (min-width:768px) {
+    .header___grid {
+        margin-top: 0;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+}
+
+.header__texto {
+    max-width: 50rem;
+}
+
+@media (min-width:768px) {
+    .header__texto {
+        max-width: 45rem;
+    }
+}
+
+@media (min-width:768px) {
+    .header__texto {
+        justify-self: start;
+    }
+}
+
+.header__titulo {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .header__titulo {
+        font-size: 5rem;
+        text-align: left;
+        line-height: 1.3;
+    }
+}
+
+.header__boton {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+@media (min-width:768px) {
+    .header__boton {
+        width: 20rem;
+        padding: 1.5rem;
+    }
+}
+
+.header__grafico {
+    max-width: 30rem;
+}
+
+/* * MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width:768px) {
+    .menu {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:768px) {
+    .menu__link {
+        color: var(--blanco);
+    }
 }
