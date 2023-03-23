@@ -308,3 +308,31 @@ figure {
     background-color: var(--blanco);
     box-shadow: none;
 }
+
+/* * COMISIONES */
+.comisiones {
+    margin-top: 15rem;
+}
+
+.comisiones__titulo {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.comisiones__heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.comisiones__content {
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+}
+
+@media (min-width:768px) {
+    .comisiones__content {
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-end;
+    }
+}
