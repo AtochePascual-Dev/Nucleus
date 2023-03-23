@@ -377,3 +377,13 @@ figure {
     font-weight: 700;
     color: var(--primario);
 }
+
+/* * FOOTER */
+.footer {
+    padding: 2rem 0;
+    background-color: #511f8f;
+}
+
+.footer .menu__link {
+    color: var(--blanco);
+}
