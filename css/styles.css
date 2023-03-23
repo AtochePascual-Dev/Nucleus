@@ -373,4 +373,7 @@ figure {
 
 .testimonial p+p {
     margin: 0;
+    text-align: right;
+    font-weight: 700;
+    color: var(--primario);
 }
