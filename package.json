@@ -1,0 +1,16 @@
+{
+  "name": "nucleus",
+  "version": "1.0.0",
+  "description": "Bienvenidos a Nucleus, la mejor aplicación para realizar pagos desde tu celular de forma fácil, segura y administrable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
